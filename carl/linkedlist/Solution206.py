@@ -12,6 +12,7 @@ class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         cur = head
         pre = None
+        # cur 指向 None 时结束循环，而不是 cur.next
         while cur:
             temp = cur.next
             cur.next = pre
